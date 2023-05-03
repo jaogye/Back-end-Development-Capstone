@@ -33,8 +33,8 @@ def signup(request):
 def index(request):
     return render(request, "index.html")
 
-SONGS_URL = "https://songs-sn-labs-jaoxxx3.labs-prod-openshift-san-a45631dc5778dc6371c67d206ba9ae5c-0000.us-east.containers.appdomain.cloud"
-PHOTO_URL = "https://pictures.11zdvgafopn2.us-south.codeengine.appdomain.cloud"
+PHOTO_URL = "https://pictures.1205t4u0q7ba.us-south.codeengine.appdomain.cloud/picture"
+SONGS_URL = "http://songs-sn-labs-jaoxxx3.labs-prod-openshift-san-a45631dc5778dc6371c67d206ba9ae5c-0000.us-east.containers.appdomain.cloud/health"
 
 def songs(request):
     songs = req.get(f"{SONGS_URL}/song").json()
